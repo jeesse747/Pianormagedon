@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpp6p82fynv8s"
-path="res://.godot/imported/Game Scene.png-0d686c64c92fb6453a71eca11ace44dc.ctex"
+uid="uid://ea1xpa5ifxct"
+path="res://.godot/imported/Back Button.png-b3fe541cbd36bdbca8d3f1cc3b6b764f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Game Scene.png"
-dest_files=["res://.godot/imported/Game Scene.png-0d686c64c92fb6453a71eca11ace44dc.ctex"]
+source_file="res://Img/Back Button.png"
+dest_files=["res://.godot/imported/Back Button.png-b3fe541cbd36bdbca8d3f1cc3b6b764f.ctex"]
 
 [params]
 

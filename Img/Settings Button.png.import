@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhr1cim08yxsy"
-path="res://.godot/imported/Melody Button Pressed.png-cfb8a4e0c54c7c3026b2ba9e4ed19c35.ctex"
+uid="uid://2nvgfwcpfliu"
+path="res://.godot/imported/Settings Button.png-096f106d19dc7470fd3ed9a254cd8ac2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Melody Button Pressed.png"
-dest_files=["res://.godot/imported/Melody Button Pressed.png-cfb8a4e0c54c7c3026b2ba9e4ed19c35.ctex"]
+source_file="res://Img/Settings Button.png"
+dest_files=["res://.godot/imported/Settings Button.png-096f106d19dc7470fd3ed9a254cd8ac2.ctex"]
 
 [params]
 

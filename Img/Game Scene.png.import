@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1trrxap7wweb"
-path="res://.godot/imported/Random Button Pressed.png-b487e2ed78c50623b24d29b4435c1ae8.ctex"
+uid="uid://bpp6p82fynv8s"
+path="res://.godot/imported/Game Scene.png-dab4c1caf489b9e64b004d405eaff144.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Random Button Pressed.png"
-dest_files=["res://.godot/imported/Random Button Pressed.png-b487e2ed78c50623b24d29b4435c1ae8.ctex"]
+source_file="res://Img/Game Scene.png"
+dest_files=["res://.godot/imported/Game Scene.png-dab4c1caf489b9e64b004d405eaff144.ctex"]
 
 [params]
 

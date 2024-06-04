@@ -1,13 +1,13 @@
 [gd_scene load_steps=9 format=3 uid="uid://ba7pvjv2uds6v"]
 
-[ext_resource type="Texture2D" uid="uid://cvffuqcmpot6t" path="res://Game mode.png" id="1_1bhu8"]
+[ext_resource type="Texture2D" uid="uid://cvffuqcmpot6t" path="res://Img/Game mode.png" id="1_1bhu8"]
 [ext_resource type="Script" path="res://GameModeScene.gd" id="1_6j284"]
-[ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Back Button.png" id="2_i2raf"]
-[ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Back Button Pressed.png" id="4_omdyq"]
-[ext_resource type="Texture2D" uid="uid://b747gi2jsffd5" path="res://Random Button.png" id="5_2gpwq"]
-[ext_resource type="Texture2D" uid="uid://1trrxap7wweb" path="res://Random Button Pressed.png" id="6_ud65q"]
-[ext_resource type="Texture2D" uid="uid://bw5xnewbt71uu" path="res://Melody Button.png" id="7_fqnjk"]
-[ext_resource type="Texture2D" uid="uid://dhr1cim08yxsy" path="res://Melody Button Pressed.png" id="8_7rd03"]
+[ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Img/Back Button.png" id="2_i2raf"]
+[ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Img/Back Button Pressed.png" id="4_omdyq"]
+[ext_resource type="Texture2D" uid="uid://b747gi2jsffd5" path="res://Img/Random Button.png" id="5_2gpwq"]
+[ext_resource type="Texture2D" uid="uid://1trrxap7wweb" path="res://Img/Random Button Pressed.png" id="6_ud65q"]
+[ext_resource type="Texture2D" uid="uid://bw5xnewbt71uu" path="res://Img/Melody Button.png" id="7_fqnjk"]
+[ext_resource type="Texture2D" uid="uid://dhr1cim08yxsy" path="res://Img/Melody Button Pressed.png" id="8_7rd03"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_6j284")
