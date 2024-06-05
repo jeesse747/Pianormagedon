@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://kih5kvn35r1i"
+path="res://.godot/imported/60 BPM - Metronome (mp3cut.net).wav-181b9294d9b60f3138a4654d666686d8.sample"
+
+[deps]
+
+source_file="res://Sounds/60 BPM - Metronome (mp3cut.net).wav"
+dest_files=["res://.godot/imported/60 BPM - Metronome (mp3cut.net).wav-181b9294d9b60f3138a4654d666686d8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

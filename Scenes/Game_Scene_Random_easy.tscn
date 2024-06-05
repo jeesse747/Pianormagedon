@@ -1,0 +1,279 @@
+[gd_scene load_steps=31 format=3 uid="uid://t4gvv865tmed"]
+
+[ext_resource type="Script" path="res://Script/Game_Scene.gd" id="1_yhqip"]
+[ext_resource type="Texture2D" uid="uid://bpp6p82fynv8s" path="res://Img/Game Scene.png" id="2_mdiky"]
+[ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Img/Back Button.png" id="3_mq6ci"]
+[ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Img/Back Button Pressed.png" id="4_3geer"]
+[ext_resource type="Texture2D" uid="uid://bu3x5g7w3cx7i" path="res://Img/left keyboard.png" id="5_4sfqt"]
+[ext_resource type="Texture2D" uid="uid://dv1ky0brmlldi" path="res://Img/Left Keyboard Pressed.png" id="6_m24gw"]
+[ext_resource type="AudioStream" uid="uid://cgpjv8118es2m" path="res://Sounds/3-c.wav" id="7_y0tje"]
+[ext_resource type="Texture2D" uid="uid://bjwwig4l1gk1x" path="res://Img/Left black note.png" id="8_5akhh"]
+[ext_resource type="Texture2D" uid="uid://dpslrrxojreml" path="res://Img/Left black note Pressed.png" id="9_ycfya"]
+[ext_resource type="AudioStream" uid="uid://c6ymhv4ij85bc" path="res://Sounds/3-cs.wav" id="10_5tu21"]
+[ext_resource type="AudioStream" uid="uid://d0l17wlgehjb0" path="res://Sounds/3-d.wav" id="11_r23xk"]
+[ext_resource type="Texture2D" uid="uid://bcf46by18wp1r" path="res://Img/Middle Keyboard.png" id="12_8qts2"]
+[ext_resource type="Texture2D" uid="uid://qalhxxoier4w" path="res://Img/Middle Keyboard Pressed.png" id="13_wwcb7"]
+[ext_resource type="AudioStream" uid="uid://bmufmn6nbufnn" path="res://Sounds/3-ds.wav" id="14_mn21e"]
+[ext_resource type="Texture2D" uid="uid://bwg34ghfjxnxo" path="res://Img/Rigth Black note.png" id="15_7f3vc"]
+[ext_resource type="Texture2D" uid="uid://c6cd2mgten4a5" path="res://Img/Rigth Black note Pressed.png" id="16_aj5n5"]
+[ext_resource type="AudioStream" uid="uid://cguscr1lxh6f4" path="res://Sounds/3-e.wav" id="17_fydi7"]
+[ext_resource type="Texture2D" uid="uid://ck0lms6xfal4r" path="res://Img/Rigth keyboard.png" id="18_cowpr"]
+[ext_resource type="Texture2D" uid="uid://ddog744ntnmmg" path="res://Img/Rigth keyboard Pressed.png" id="19_jwnrc"]
+[ext_resource type="AudioStream" uid="uid://blpvfte8pq3jh" path="res://Sounds/3-f.wav" id="20_jlgf0"]
+[ext_resource type="AudioStream" uid="uid://4ue3u5k2tpee" path="res://Sounds/3-fs.wav" id="21_k00vt"]
+[ext_resource type="AudioStream" uid="uid://oidhh4pahssy" path="res://Sounds/3-g.wav" id="22_m5owx"]
+[ext_resource type="AudioStream" uid="uid://be8tvmixk5uaq" path="res://Sounds/3-gs.wav" id="23_vtoyq"]
+[ext_resource type="AudioStream" uid="uid://brxjhjmkcamck" path="res://Sounds/3-a.wav" id="24_np0ym"]
+[ext_resource type="Texture2D" uid="uid://b1xtlyq2n1s4s" path="res://Img/Middel black note.png" id="25_656k7"]
+[ext_resource type="Texture2D" uid="uid://cvq588btd5kbx" path="res://Img/Middel black note Pressed.png" id="26_0u72s"]
+[ext_resource type="AudioStream" uid="uid://bbocs5pub0sib" path="res://Sounds/3-as.wav" id="27_p8apr"]
+[ext_resource type="AudioStream" uid="uid://b6j4io0bvwbgb" path="res://Sounds/3-b.wav" id="28_m8yw6"]
+[ext_resource type="AudioStream" uid="uid://dtowymu5h2chs" path="res://Sounds/4-c.wav" id="29_cmjqu"]
+[ext_resource type="AudioStream" uid="uid://kih5kvn35r1i" path="res://Sounds/60 BPM - Metronome (mp3cut.net).wav" id="30_kjkar"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yhqip")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(300, 300)
+texture = ExtResource("2_mdiky")
+
+[node name="Back Button" type="TextureButton" parent="."]
+offset_left = 9.0
+offset_top = 5.0
+offset_right = 98.0
+offset_bottom = 95.0
+texture_normal = ExtResource("3_mq6ci")
+texture_hover = ExtResource("4_3geer")
+ignore_texture_size = true
+stretch_mode = 3
+flip_v = true
+
+[node name="Do note" type="TextureButton" parent="."]
+offset_left = 197.0
+offset_top = 367.0
+offset_right = 216.0
+offset_bottom = 496.0
+texture_normal = ExtResource("5_4sfqt")
+texture_pressed = ExtResource("6_m24gw")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Do Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_y0tje")
+
+[node name="Dos Button" type="TextureButton" parent="."]
+offset_left = 209.0
+offset_top = 370.0
+offset_right = 233.0
+offset_bottom = 444.0
+texture_normal = ExtResource("8_5akhh")
+texture_pressed = ExtResource("9_ycfya")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Dos Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_5tu21")
+
+[node name="Re Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_r23xk")
+
+[node name="Re Button" type="TextureButton" parent="."]
+offset_left = 223.0
+offset_top = 365.0
+offset_right = 251.0
+offset_bottom = 496.0
+texture_normal = ExtResource("12_8qts2")
+texture_pressed = ExtResource("13_wwcb7")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Res Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_mn21e")
+
+[node name="Res Button" type="TextureButton" parent="."]
+offset_left = 240.0
+offset_top = 367.0
+offset_right = 258.0
+offset_bottom = 449.0
+texture_normal = ExtResource("15_7f3vc")
+texture_pressed = ExtResource("16_aj5n5")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Mi Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_fydi7")
+
+[node name="Mi Button" type="TextureButton" parent="."]
+offset_left = 256.0
+offset_top = 368.0
+offset_right = 271.0
+offset_bottom = 492.0
+texture_normal = ExtResource("18_cowpr")
+texture_pressed = ExtResource("19_jwnrc")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Fa Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_jlgf0")
+
+[node name="Fa Button" type="TextureButton" parent="."]
+offset_left = 280.0
+offset_top = 368.0
+offset_right = 295.0
+offset_bottom = 496.0
+texture_normal = ExtResource("5_4sfqt")
+texture_pressed = ExtResource("6_m24gw")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Fas Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("21_k00vt")
+
+[node name="Fas Button" type="TextureButton" parent="."]
+offset_left = 294.0
+offset_top = 368.0
+offset_right = 310.0
+offset_bottom = 447.0
+texture_normal = ExtResource("8_5akhh")
+texture_pressed = ExtResource("9_ycfya")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Sol Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("22_m5owx")
+
+[node name="Sol Button" type="TextureButton" parent="."]
+offset_left = 311.0
+offset_top = 358.0
+offset_right = 325.0
+offset_bottom = 504.0
+texture_normal = ExtResource("12_8qts2")
+texture_pressed = ExtResource("13_wwcb7")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Sols Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_vtoyq")
+
+[node name="La Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("24_np0ym")
+
+[node name="La Button" type="TextureButton" parent="."]
+offset_left = 336.0
+offset_top = 365.0
+offset_right = 354.0
+offset_bottom = 495.0
+texture_normal = ExtResource("12_8qts2")
+texture_pressed = ExtResource("13_wwcb7")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Sols Button" type="TextureButton" parent="."]
+offset_left = 322.0
+offset_top = 372.0
+offset_right = 339.0
+offset_bottom = 442.0
+texture_normal = ExtResource("25_656k7")
+texture_pressed = ExtResource("26_0u72s")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Las Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("27_p8apr")
+
+[node name="Si Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_m8yw6")
+
+[node name="Si button" type="TextureButton" parent="."]
+offset_left = 360.0
+offset_top = 365.0
+offset_right = 383.0
+offset_bottom = 494.0
+texture_normal = ExtResource("18_cowpr")
+texture_pressed = ExtResource("19_jwnrc")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Las Button" type="TextureButton" parent="."]
+offset_left = 349.0
+offset_top = 367.0
+offset_right = 365.0
+offset_bottom = 448.0
+texture_normal = ExtResource("15_7f3vc")
+texture_pressed = ExtResource("16_aj5n5")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Do oct Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("29_cmjqu")
+
+[node name="Do oct Button" type="TextureButton" parent="."]
+offset_left = 383.0
+offset_top = 370.0
+offset_right = 407.0
+offset_bottom = 494.0
+texture_normal = ExtResource("5_4sfqt")
+texture_pressed = ExtResource("6_m24gw")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 456.0
+offset_top = 26.0
+offset_right = 553.0
+offset_bottom = 49.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Metronome" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("30_kjkar")
+
+[connection signal="pressed" from="Back Button" to="." method="_on_texture_button_pressed"]
+[connection signal="finished" from="Do Sound" to="." method="_on_do_sound_finished"]
+[connection signal="finished" from="Dos Sound" to="." method="_on_dos_sound_finished"]
+[connection signal="finished" from="Re Sound" to="." method="_on_re_sound_finished"]
+[connection signal="focus_entered" from="Re Button" to="." method="_on_re_button_focus_entered"]
+[connection signal="focus_exited" from="Re Button" to="." method="_on_re_button_focus_exited"]
+[connection signal="pressed" from="Re Button" to="." method="_on_re_button_pressed"]
+[connection signal="finished" from="Res Sound" to="." method="_on_res_sound_finished"]
+[connection signal="focus_entered" from="Res Button" to="." method="_on_res_button_focus_entered"]
+[connection signal="focus_exited" from="Res Button" to="." method="_on_res_button_focus_exited"]
+[connection signal="pressed" from="Res Button" to="." method="_on_res_button_pressed"]
+[connection signal="finished" from="Mi Sound" to="." method="_on_mi_sound_finished"]
+[connection signal="focus_entered" from="Mi Button" to="." method="_on_mi_button_focus_entered"]
+[connection signal="focus_exited" from="Mi Button" to="." method="_on_mi_button_focus_exited"]
+[connection signal="pressed" from="Mi Button" to="." method="_on_mi_button_pressed"]
+[connection signal="finished" from="Fa Sound" to="." method="_on_fa_sound_finished"]
+[connection signal="focus_entered" from="Fa Button" to="." method="_on_fa_button_focus_entered"]
+[connection signal="focus_exited" from="Fa Button" to="." method="_on_fa_button_focus_exited"]
+[connection signal="pressed" from="Fa Button" to="." method="_on_fa_button_pressed"]
+[connection signal="finished" from="Fas Sound" to="." method="_on_fas_sound_finished"]
+[connection signal="focus_entered" from="Fas Button" to="." method="_on_fas_button_focus_entered"]
+[connection signal="focus_exited" from="Fas Button" to="." method="_on_fas_button_focus_exited"]
+[connection signal="pressed" from="Fas Button" to="." method="_on_fas_button_pressed"]
+[connection signal="finished" from="Sol Sound" to="." method="_on_sol_sound_finished"]
+[connection signal="focus_entered" from="Sol Button" to="." method="_on_sol_button_focus_entered"]
+[connection signal="focus_exited" from="Sol Button" to="." method="_on_sol_button_focus_exited"]
+[connection signal="pressed" from="Sol Button" to="." method="_on_sol_button_pressed"]
+[connection signal="finished" from="Sols Sound" to="." method="_on_sols_sound_finished"]
+[connection signal="finished" from="La Sound" to="." method="_on_la_sound_finished"]
+[connection signal="focus_entered" from="La Button" to="." method="_on_la_button_focus_entered"]
+[connection signal="focus_exited" from="La Button" to="." method="_on_la_button_focus_exited"]
+[connection signal="pressed" from="La Button" to="." method="_on_la_button_pressed"]
+[connection signal="focus_entered" from="Sols Button" to="." method="_on_sols_button_focus_entered"]
+[connection signal="focus_exited" from="Sols Button" to="." method="_on_sols_button_focus_exited"]
+[connection signal="pressed" from="Sols Button" to="." method="_on_sols_button_pressed"]
+[connection signal="finished" from="Las Sound" to="." method="_on_las_sound_finished"]
+[connection signal="finished" from="Si Sound" to="." method="_on_si_sound_finished"]
+[connection signal="focus_entered" from="Si button" to="." method="_on_si_button_focus_entered"]
+[connection signal="focus_exited" from="Si button" to="." method="_on_si_button_focus_exited"]
+[connection signal="pressed" from="Si button" to="." method="_on_si_button_pressed"]
+[connection signal="focus_entered" from="Las Button" to="." method="_on_las_button_focus_entered"]
+[connection signal="focus_exited" from="Las Button" to="." method="_on_las_button_focus_exited"]
+[connection signal="pressed" from="Las Button" to="." method="_on_las_button_pressed"]
+[connection signal="finished" from="Do oct Sound" to="." method="_on_do_oct_sound_finished"]
+[connection signal="focus_entered" from="Do oct Button" to="." method="_on_do_oct_button_focus_entered"]
+[connection signal="focus_exited" from="Do oct Button" to="." method="_on_do_oct_button_focus_exited"]
+[connection signal="pressed" from="Do oct Button" to="." method="_on_do_oct_button_pressed"]

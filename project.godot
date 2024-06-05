@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Pianormagedon"
-run/main_scene="res://MainMenu.tscn"
+run/main_scene="res://Scenes/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Global="*res://Script/Global.gd"
 
 [display]
 

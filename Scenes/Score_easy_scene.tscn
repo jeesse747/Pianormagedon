@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bweqadt7u2j8a"]
+
+[ext_resource type="Script" path="res://Script/Score_Scene.gd" id="1_dm4sa"]
+[ext_resource type="Texture2D" uid="uid://bvql5sf1tesms" path="res://Img/Score Scene.png" id="2_2ksqm"]
+[ext_resource type="Texture2D" uid="uid://c8eyfnqy5k0h5" path="res://Img/Home Button.png" id="3_p7j23"]
+[ext_resource type="Texture2D" uid="uid://dfyhyhy0re7fo" path="res://Img/Home Button Pressed.png" id="4_n8mst"]
+[ext_resource type="Texture2D" uid="uid://7u4udvkllxoq" path="res://Img/Play Again Button.png" id="5_jsrod"]
+[ext_resource type="Texture2D" uid="uid://faoef8l0k85x" path="res://Img/Play Again Button Pressed.png" id="6_wtung"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2sq4w"]
+font_size = 60
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dm4sa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(300, 300)
+texture = ExtResource("2_2ksqm")
+
+[node name="Home Button" type="TextureButton" parent="."]
+offset_left = 126.0
+offset_top = 364.0
+offset_right = 247.0
+offset_bottom = 490.0
+texture_normal = ExtResource("3_p7j23")
+texture_hover = ExtResource("4_n8mst")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="Play Again Button" type="TextureButton" parent="."]
+offset_left = 345.0
+offset_top = 360.0
+offset_right = 474.0
+offset_bottom = 489.0
+texture_normal = ExtResource("5_jsrod")
+texture_hover = ExtResource("6_wtung")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 147.0
+offset_top = 210.0
+offset_right = 451.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+label_settings = SubResource("LabelSettings_2sq4w")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Home Button" to="." method="_on_home_button_pressed"]
+[connection signal="pressed" from="Play Again Button" to="." method="_on_play_again_button_pressed"]
