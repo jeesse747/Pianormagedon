@@ -1,50 +1,50 @@
-[gd_scene load_steps=31 format=3 uid="uid://c1pnadbnpkbhq"]
+[gd_scene load_steps=31 format=3 uid="uid://cngevh57tkvco"]
 
-[ext_resource type="Script" path="res://Script/Game_Scene.gd" id="1_jswe6"]
-[ext_resource type="Texture2D" uid="uid://bpp6p82fynv8s" path="res://Img/Game Scene.png" id="2_oqjjf"]
-[ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Img/Back Button.png" id="3_yq8ke"]
-[ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Img/Back Button Pressed.png" id="4_alh0v"]
-[ext_resource type="Texture2D" uid="uid://bu3x5g7w3cx7i" path="res://Img/left keyboard.png" id="5_ev3co"]
-[ext_resource type="Texture2D" uid="uid://dv1ky0brmlldi" path="res://Img/Left Keyboard Pressed.png" id="6_j22yd"]
-[ext_resource type="AudioStream" uid="uid://cgpjv8118es2m" path="res://Sounds/3-c.wav" id="7_4hcar"]
-[ext_resource type="Texture2D" uid="uid://bjwwig4l1gk1x" path="res://Img/Left black note.png" id="8_4ev6c"]
-[ext_resource type="Texture2D" uid="uid://dpslrrxojreml" path="res://Img/Left black note Pressed.png" id="9_kx0nf"]
-[ext_resource type="AudioStream" uid="uid://c6ymhv4ij85bc" path="res://Sounds/3-cs.wav" id="10_sp5xu"]
-[ext_resource type="AudioStream" uid="uid://d0l17wlgehjb0" path="res://Sounds/3-d.wav" id="11_xagcc"]
-[ext_resource type="Texture2D" uid="uid://bcf46by18wp1r" path="res://Img/Middle Keyboard.png" id="12_fcxfa"]
-[ext_resource type="Texture2D" uid="uid://qalhxxoier4w" path="res://Img/Middle Keyboard Pressed.png" id="13_a528h"]
-[ext_resource type="AudioStream" uid="uid://bmufmn6nbufnn" path="res://Sounds/3-ds.wav" id="14_qneeq"]
-[ext_resource type="Texture2D" uid="uid://bwg34ghfjxnxo" path="res://Img/Rigth Black note.png" id="15_2hwnl"]
-[ext_resource type="Texture2D" uid="uid://c6cd2mgten4a5" path="res://Img/Rigth Black note Pressed.png" id="16_jf83w"]
-[ext_resource type="AudioStream" uid="uid://cguscr1lxh6f4" path="res://Sounds/3-e.wav" id="17_6cj82"]
-[ext_resource type="Texture2D" uid="uid://ck0lms6xfal4r" path="res://Img/Rigth keyboard.png" id="17_8sr3c"]
-[ext_resource type="Texture2D" uid="uid://ddog744ntnmmg" path="res://Img/Rigth keyboard Pressed.png" id="18_yfpfg"]
-[ext_resource type="Texture2D" uid="uid://b1xtlyq2n1s4s" path="res://Img/Middel black note.png" id="19_yso53"]
-[ext_resource type="Texture2D" uid="uid://cvq588btd5kbx" path="res://Img/Middel black note Pressed.png" id="20_2xwio"]
-[ext_resource type="AudioStream" uid="uid://blpvfte8pq3jh" path="res://Sounds/3-f.wav" id="20_onu0j"]
-[ext_resource type="AudioStream" uid="uid://4ue3u5k2tpee" path="res://Sounds/3-fs.wav" id="21_1b01b"]
-[ext_resource type="AudioStream" uid="uid://oidhh4pahssy" path="res://Sounds/3-g.wav" id="22_hmupm"]
-[ext_resource type="AudioStream" uid="uid://be8tvmixk5uaq" path="res://Sounds/3-gs.wav" id="23_hro6b"]
-[ext_resource type="AudioStream" uid="uid://brxjhjmkcamck" path="res://Sounds/3-a.wav" id="24_c47hf"]
-[ext_resource type="AudioStream" uid="uid://bbocs5pub0sib" path="res://Sounds/3-as.wav" id="27_wal1q"]
-[ext_resource type="AudioStream" uid="uid://b6j4io0bvwbgb" path="res://Sounds/3-b.wav" id="28_g1ss3"]
-[ext_resource type="AudioStream" uid="uid://dtowymu5h2chs" path="res://Sounds/4-c.wav" id="30_d1wwf"]
-[ext_resource type="AudioStream" uid="uid://kih5kvn35r1i" path="res://Sounds/60 BPM - Metronome (mp3cut.net).wav" id="30_u4fmu"]
+[ext_resource type="Script" path="res://Script/Game_Scene_normal.gd" id="1_2u6c7"]
+[ext_resource type="Texture2D" uid="uid://bpp6p82fynv8s" path="res://Img/Game Scene.png" id="2_ffu42"]
+[ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Img/Back Button.png" id="3_aatsv"]
+[ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Img/Back Button Pressed.png" id="4_1rbai"]
+[ext_resource type="Texture2D" uid="uid://bu3x5g7w3cx7i" path="res://Img/left keyboard.png" id="5_fqcnv"]
+[ext_resource type="Texture2D" uid="uid://dv1ky0brmlldi" path="res://Img/Left Keyboard Pressed.png" id="6_8tc3p"]
+[ext_resource type="AudioStream" uid="uid://cgpjv8118es2m" path="res://Sounds/3-c.wav" id="7_se5ca"]
+[ext_resource type="Texture2D" uid="uid://bjwwig4l1gk1x" path="res://Img/Left black note.png" id="8_oqs1a"]
+[ext_resource type="Texture2D" uid="uid://dpslrrxojreml" path="res://Img/Left black note Pressed.png" id="9_07dya"]
+[ext_resource type="AudioStream" uid="uid://c6ymhv4ij85bc" path="res://Sounds/3-cs.wav" id="10_16cx0"]
+[ext_resource type="AudioStream" uid="uid://d0l17wlgehjb0" path="res://Sounds/3-d.wav" id="11_yirch"]
+[ext_resource type="Texture2D" uid="uid://bcf46by18wp1r" path="res://Img/Middle Keyboard.png" id="12_vbyk5"]
+[ext_resource type="Texture2D" uid="uid://qalhxxoier4w" path="res://Img/Middle Keyboard Pressed.png" id="13_q12e4"]
+[ext_resource type="AudioStream" uid="uid://bmufmn6nbufnn" path="res://Sounds/3-ds.wav" id="14_td1ts"]
+[ext_resource type="Texture2D" uid="uid://bwg34ghfjxnxo" path="res://Img/Rigth Black note.png" id="15_qirk8"]
+[ext_resource type="Texture2D" uid="uid://c6cd2mgten4a5" path="res://Img/Rigth Black note Pressed.png" id="16_b240r"]
+[ext_resource type="AudioStream" uid="uid://cguscr1lxh6f4" path="res://Sounds/3-e.wav" id="17_6vowl"]
+[ext_resource type="Texture2D" uid="uid://ck0lms6xfal4r" path="res://Img/Rigth keyboard.png" id="18_ntguk"]
+[ext_resource type="Texture2D" uid="uid://ddog744ntnmmg" path="res://Img/Rigth keyboard Pressed.png" id="19_gwxbu"]
+[ext_resource type="AudioStream" uid="uid://blpvfte8pq3jh" path="res://Sounds/3-f.wav" id="20_t7f3q"]
+[ext_resource type="AudioStream" uid="uid://4ue3u5k2tpee" path="res://Sounds/3-fs.wav" id="21_pebnt"]
+[ext_resource type="AudioStream" uid="uid://oidhh4pahssy" path="res://Sounds/3-g.wav" id="22_uclgf"]
+[ext_resource type="AudioStream" uid="uid://be8tvmixk5uaq" path="res://Sounds/3-gs.wav" id="23_ns5uh"]
+[ext_resource type="AudioStream" uid="uid://brxjhjmkcamck" path="res://Sounds/3-a.wav" id="24_4rbim"]
+[ext_resource type="Texture2D" uid="uid://b1xtlyq2n1s4s" path="res://Img/Middel black note.png" id="25_exvbw"]
+[ext_resource type="Texture2D" uid="uid://cvq588btd5kbx" path="res://Img/Middel black note Pressed.png" id="26_wtc20"]
+[ext_resource type="AudioStream" uid="uid://bbocs5pub0sib" path="res://Sounds/3-as.wav" id="27_bhyf6"]
+[ext_resource type="AudioStream" uid="uid://b6j4io0bvwbgb" path="res://Sounds/3-b.wav" id="28_dvv16"]
+[ext_resource type="AudioStream" uid="uid://dtowymu5h2chs" path="res://Sounds/4-c.wav" id="29_drm61"]
+[ext_resource type="AudioStream" uid="uid://kih5kvn35r1i" path="res://Sounds/60 BPM - Metronome (mp3cut.net).wav" id="30_w2pjy"]
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_jswe6")
+script = ExtResource("1_2u6c7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(300, 300)
-texture = ExtResource("2_oqjjf")
+texture = ExtResource("2_ffu42")
 
 [node name="Back Button" type="TextureButton" parent="."]
 offset_left = 9.0
 offset_top = 5.0
 offset_right = 98.0
 offset_bottom = 95.0
-texture_normal = ExtResource("3_yq8ke")
-texture_hover = ExtResource("4_alh0v")
+texture_normal = ExtResource("3_aatsv")
+texture_hover = ExtResource("4_1rbai")
 ignore_texture_size = true
 stretch_mode = 3
 flip_v = true
@@ -54,118 +54,118 @@ offset_left = 197.0
 offset_top = 367.0
 offset_right = 216.0
 offset_bottom = 496.0
-texture_normal = ExtResource("5_ev3co")
-texture_pressed = ExtResource("6_j22yd")
+texture_normal = ExtResource("5_fqcnv")
+texture_pressed = ExtResource("6_8tc3p")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Do Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("7_4hcar")
+stream = ExtResource("7_se5ca")
 
 [node name="Dos Button" type="TextureButton" parent="."]
 offset_left = 209.0
 offset_top = 370.0
 offset_right = 233.0
 offset_bottom = 444.0
-texture_normal = ExtResource("8_4ev6c")
-texture_pressed = ExtResource("9_kx0nf")
+texture_normal = ExtResource("8_oqs1a")
+texture_pressed = ExtResource("9_07dya")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Dos Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_sp5xu")
+stream = ExtResource("10_16cx0")
 
 [node name="Re Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_xagcc")
+stream = ExtResource("11_yirch")
 
 [node name="Re Button" type="TextureButton" parent="."]
 offset_left = 223.0
 offset_top = 365.0
 offset_right = 251.0
 offset_bottom = 496.0
-texture_normal = ExtResource("12_fcxfa")
-texture_pressed = ExtResource("13_a528h")
+texture_normal = ExtResource("12_vbyk5")
+texture_pressed = ExtResource("13_q12e4")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Res Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("14_qneeq")
+stream = ExtResource("14_td1ts")
 
 [node name="Res Button" type="TextureButton" parent="."]
 offset_left = 240.0
 offset_top = 367.0
 offset_right = 258.0
 offset_bottom = 449.0
-texture_normal = ExtResource("15_2hwnl")
-texture_pressed = ExtResource("16_jf83w")
+texture_normal = ExtResource("15_qirk8")
+texture_pressed = ExtResource("16_b240r")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Mi Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("17_6cj82")
+stream = ExtResource("17_6vowl")
 
 [node name="Mi Button" type="TextureButton" parent="."]
 offset_left = 256.0
 offset_top = 368.0
 offset_right = 271.0
 offset_bottom = 492.0
-texture_normal = ExtResource("17_8sr3c")
-texture_pressed = ExtResource("18_yfpfg")
+texture_normal = ExtResource("18_ntguk")
+texture_pressed = ExtResource("19_gwxbu")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Fa Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("20_onu0j")
+stream = ExtResource("20_t7f3q")
 
 [node name="Fa Button" type="TextureButton" parent="."]
 offset_left = 280.0
 offset_top = 368.0
 offset_right = 295.0
 offset_bottom = 496.0
-texture_normal = ExtResource("5_ev3co")
-texture_pressed = ExtResource("6_j22yd")
+texture_normal = ExtResource("5_fqcnv")
+texture_pressed = ExtResource("6_8tc3p")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Fas Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("21_1b01b")
+stream = ExtResource("21_pebnt")
 
 [node name="Fas Button" type="TextureButton" parent="."]
 offset_left = 294.0
 offset_top = 368.0
 offset_right = 310.0
 offset_bottom = 447.0
-texture_normal = ExtResource("8_4ev6c")
-texture_pressed = ExtResource("9_kx0nf")
+texture_normal = ExtResource("8_oqs1a")
+texture_pressed = ExtResource("9_07dya")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Sol Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("22_hmupm")
+stream = ExtResource("22_uclgf")
 
 [node name="Sol Button" type="TextureButton" parent="."]
 offset_left = 311.0
 offset_top = 358.0
 offset_right = 325.0
 offset_bottom = 504.0
-texture_normal = ExtResource("12_fcxfa")
-texture_pressed = ExtResource("13_a528h")
+texture_normal = ExtResource("12_vbyk5")
+texture_pressed = ExtResource("13_q12e4")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Sols Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("23_hro6b")
+stream = ExtResource("23_ns5uh")
 
 [node name="La Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("24_c47hf")
+stream = ExtResource("24_4rbim")
 
 [node name="La Button" type="TextureButton" parent="."]
 offset_left = 336.0
 offset_top = 365.0
 offset_right = 354.0
 offset_bottom = 495.0
-texture_normal = ExtResource("12_fcxfa")
-texture_pressed = ExtResource("13_a528h")
+texture_normal = ExtResource("12_vbyk5")
+texture_pressed = ExtResource("13_q12e4")
 ignore_texture_size = true
 stretch_mode = 3
 
@@ -174,24 +174,24 @@ offset_left = 322.0
 offset_top = 372.0
 offset_right = 339.0
 offset_bottom = 442.0
-texture_normal = ExtResource("19_yso53")
-texture_pressed = ExtResource("20_2xwio")
+texture_normal = ExtResource("25_exvbw")
+texture_pressed = ExtResource("26_wtc20")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Las Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("27_wal1q")
+stream = ExtResource("27_bhyf6")
 
 [node name="Si Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("28_g1ss3")
+stream = ExtResource("28_dvv16")
 
 [node name="Si button" type="TextureButton" parent="."]
 offset_left = 360.0
 offset_top = 365.0
 offset_right = 383.0
 offset_bottom = 494.0
-texture_normal = ExtResource("17_8sr3c")
-texture_pressed = ExtResource("18_yfpfg")
+texture_normal = ExtResource("18_ntguk")
+texture_pressed = ExtResource("19_gwxbu")
 ignore_texture_size = true
 stretch_mode = 3
 
@@ -200,21 +200,21 @@ offset_left = 349.0
 offset_top = 367.0
 offset_right = 365.0
 offset_bottom = 448.0
-texture_normal = ExtResource("15_2hwnl")
-texture_pressed = ExtResource("16_jf83w")
+texture_normal = ExtResource("15_qirk8")
+texture_pressed = ExtResource("16_b240r")
 ignore_texture_size = true
 stretch_mode = 3
 
 [node name="Do oct Sound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("30_d1wwf")
+stream = ExtResource("29_drm61")
 
 [node name="Do oct Button" type="TextureButton" parent="."]
 offset_left = 383.0
 offset_top = 370.0
 offset_right = 407.0
 offset_bottom = 494.0
-texture_normal = ExtResource("5_ev3co")
-texture_pressed = ExtResource("6_j22yd")
+texture_normal = ExtResource("5_fqcnv")
+texture_pressed = ExtResource("6_8tc3p")
 ignore_texture_size = true
 stretch_mode = 3
 
@@ -228,7 +228,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Metronome" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("30_u4fmu")
+stream = ExtResource("30_w2pjy")
 
 [connection signal="pressed" from="Back Button" to="." method="_on_texture_button_pressed"]
 [connection signal="finished" from="Do Sound" to="." method="_on_do_sound_finished"]

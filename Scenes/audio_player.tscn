@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7ogjjsdvcx6i"]
+
+[ext_resource type="AudioStream" uid="uid://dhrph0a2xyqco" path="res://Sounds/Your turn to go.mp3" id="1_yjddr"]
+
+[node name="audio_player" type="AudioStreamPlayer"]
+stream = ExtResource("1_yjddr")
+volume_db = -5.0
+autoplay = true
+bus = &"Bg_Bus"

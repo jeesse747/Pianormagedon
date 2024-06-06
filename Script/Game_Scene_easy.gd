@@ -1,7 +1,7 @@
 extends Node2D
 
-var Game_Mode_Scene = load("res://GameModeScene.tscn")
-var Score_Scene_ez = load("res://Score_easy_scene.tscn")
+var Game_Mode_Scene = load("res://Scenes/GameModeScene.tscn")
+var Score_Scene_ez = load("res://Scenes/Score_easy_scene.tscn")
 var note_positions_y = [260, 253, 247, 240, 234, 227, 220, 214]
 var active_notes = []  # Array para mantener un registro de las notas generadas
 var score = 0
@@ -51,13 +51,12 @@ var notes = {
 func _ready():
 	
 	 # Configurar el reproductor de música de fondo para que se reproduzca automáticamente
-	if background_music:
-		background_music.play()
-	else:
-		print("Error: 'BackgroundMusic' no encontrado en la escena")
+	
+	background_music.play()
+	
 	
 	# Configurar el temporizador para cambiar de escena después de 2 minutos
-	scene_timer.wait_time = 20  # 2 minutos en segundos
+	scene_timer.wait_time = 120  # 2 minutos en segundos
 	scene_timer.one_shot = true
 	scene_timer.connect("timeout", Callable(self, "_on_scene_timeout"))
 	add_child(scene_timer)
@@ -92,7 +91,7 @@ func _ready():
 	
 	# Crear un temporizador para generar notas cada segundo
 	var timer = Timer.new()
-	timer.wait_time = 2.5
+	timer.wait_time = 5
 	timer.autostart = true
 	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
 	add_child(timer)
@@ -217,48 +216,43 @@ func _input(event):
 					leftmost_note = note
 
 			if leftmost_note != null:
-				print("Nota más a la izquierda: ", leftmost_note)
-				print("Posición X de la nota: ", leftmost_note.position.x)
+				
 				var feedback_type = "miss"
 				var score_value = 0
 				if leftmost_note.position.x >= 104 and leftmost_note.position.x <= 115:
 					# La nota está en la zona "perfect"
 					if (note_name == "do" and leftmost_note.position.y == 260) or (note_name == "re" and leftmost_note.position.y == 253) or (note_name == "mi" and leftmost_note.position.y == 247) or (note_name == "fa" and leftmost_note.position.y == 240) or (note_name == "sol" and leftmost_note.position.y == 234) or (note_name == "la" and leftmost_note.position.y == 227) or (note_name == "si" and leftmost_note.position.y == 220) or (note_name == "do_oct" and leftmost_note.position.y == 214):
-						print("Punto válido: Perfect")  # Acción cuando el punto es "Perfect"
+						
 						score += 500
 						feedback_type = "perfect"
 						score_value = 500
-					else:
-						print("Punto inválido: Miss")  # Acción cuando el punto es inválido
+					
 				elif leftmost_note.position.x >= 116 and leftmost_note.position.x <= 135:
 					# La nota está en la zona "Great"
 					if (note_name == "do" and leftmost_note.position.y == 260) or (note_name == "re" and leftmost_note.position.y == 253) or (note_name == "mi" and leftmost_note.position.y == 247) or (note_name == "fa" and leftmost_note.position.y == 240) or (note_name == "sol" and leftmost_note.position.y == 234) or (note_name == "la" and leftmost_note.position.y == 227) or (note_name == "si" and leftmost_note.position.y == 220) or (note_name == "do_oct" and leftmost_note.position.y == 214):
-						print("Punto válido: Great")  # Acción cuando el punto es "Great"
+						
 						score += 300
 						feedback_type = "great"
 						score_value = 300
-					else:
-						print("Punto inválido: Miss")  # Acción cuando el punto es inválido
+					
+						
 				elif leftmost_note.position.x >= 136 and leftmost_note.position.x <= 152:
 					# La nota está en la zona "Good"
 					if (note_name == "do" and leftmost_note.position.y == 260) or (note_name == "re" and leftmost_note.position.y == 253) or (note_name == "mi" and leftmost_note.position.y == 247) or (note_name == "fa" and leftmost_note.position.y == 240) or (note_name == "sol" and leftmost_note.position.y == 234) or (note_name == "la" and leftmost_note.position.y == 227) or (note_name == "si" and leftmost_note.position.y == 220) or (note_name == "do_oct" and leftmost_note.position.y == 214):
-						print("Punto válido: Good")  # Acción cuando el punto es "Good"
+						
 						score += 150
 						feedback_type = "good"
 						score_value = 150
-					else:
-						print("Punto inválido: Miss")  # Acción cuando el punto es inválido
+					
 				elif leftmost_note.position.x >= 153 and leftmost_note.position.x <= 174:
 					# La nota está en la zona "Bad"
 					if (note_name == "do" and leftmost_note.position.y == 260) or (note_name == "re" and leftmost_note.position.y == 253) or (note_name == "mi" and leftmost_note.position.y == 247) or (note_name == "fa" and leftmost_note.position.y == 240) or (note_name == "sol" and leftmost_note.position.y == 234) or (note_name == "la" and leftmost_note.position.y == 227) or (note_name == "si" and leftmost_note.position.y == 220) or (note_name == "do_oct" and leftmost_note.position.y == 214):
-						print("Punto válido: Bad")  # Acción cuando el punto es "Bad"
+						
 						score += 50
 						feedback_type = "bad"
 						score_value = 50
-					else:
-						print("Punto inválido: Miss")  # Acción cuando el punto es inválido
-				else:
-					print("Punto inválido: Miss")  # La nota no está en la zona de validación
+					
+				
 				
 				score_label.text = str(score)  # Actualizar el puntaje en pantalla
 				show_feedback(feedback_position, feedback_type, score_value)
@@ -291,3 +285,4 @@ func _on_focus_exited(note):
 
 func _on_texture_button_pressed():
 	get_tree().change_scene_to_packed(Game_Mode_Scene)
+	AudioPlayer.play()

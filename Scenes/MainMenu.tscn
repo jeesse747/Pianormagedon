@@ -11,8 +11,8 @@
 [sub_resource type="GDScript" id="GDScript_r12c2"]
 script/source = "extends Node2D
 
-var Game_Mode_Scene = load(\"res://GameModeScene.tscn\")
-var Settings_Scene = load(\"res://Settings_Scene.tscn\")
+var Game_Mode_Scene = load(\"res://Scenes/GameModeScene.tscn\")
+var Settings_Scene = load(\"res://Scenes/Settings_Scene.tscn\")
 
 
 func _on_PlayButton_pressed():

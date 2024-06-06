@@ -1,53 +1,64 @@
-[gd_scene load_steps=9 format=3 uid="uid://ba7pvjv2uds6v"]
+[gd_scene load_steps=11 format=3 uid="uid://ba7pvjv2uds6v"]
 
 [ext_resource type="Script" path="res://Script/GameModeScene.gd" id="1_1qhle"]
 [ext_resource type="Texture2D" uid="uid://cvffuqcmpot6t" path="res://Img/Game mode.png" id="2_8uqqr"]
 [ext_resource type="Texture2D" uid="uid://ea1xpa5ifxct" path="res://Img/Back Button.png" id="3_7nds3"]
 [ext_resource type="Texture2D" uid="uid://cb4hsgw1dwibx" path="res://Img/Back Button Pressed.png" id="4_75kre"]
-[ext_resource type="Texture2D" uid="uid://b747gi2jsffd5" path="res://Img/Random Button.png" id="5_5ul67"]
-[ext_resource type="Texture2D" uid="uid://1trrxap7wweb" path="res://Img/Random Button Pressed.png" id="6_7ihdr"]
-[ext_resource type="Texture2D" uid="uid://bw5xnewbt71uu" path="res://Img/Melody Button.png" id="7_ly7nc"]
-[ext_resource type="Texture2D" uid="uid://dhr1cim08yxsy" path="res://Img/Melody Button Pressed.png" id="8_u775e"]
+[ext_resource type="Texture2D" uid="uid://do3sn3wjyoih5" path="res://Img/Easy Mode Button.png" id="5_tm75f"]
+[ext_resource type="Texture2D" uid="uid://cowdlkiwqq3tn" path="res://Img/Easy Mode Button Pressed.png" id="6_8qaww"]
+[ext_resource type="Texture2D" uid="uid://b8qd3bskkc5lm" path="res://Img/Normal mode Button.png" id="7_yuyrt"]
+[ext_resource type="Texture2D" uid="uid://cooyx0oxy3da5" path="res://Img/Normal mode Button Pressed.png" id="8_jlw8r"]
+[ext_resource type="Texture2D" uid="uid://bx52w2lmp8pc6" path="res://Img/Hard mode Button.png" id="9_ph3n8"]
+[ext_resource type="Texture2D" uid="uid://deihp7ufsn28o" path="res://Img/Hard mode Button Pressed.png" id="10_y1a5x"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_1qhle")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(297, 301)
-scale = Vector2(0.579102, 0.585938)
+position = Vector2(300, 300)
 texture = ExtResource("2_8uqqr")
 
-[node name="Back Button" type="TextureButton" parent="Sprite2D"]
-offset_left = -509.409
-offset_top = -518.826
-offset_right = -357.409
-offset_bottom = -363.826
+[node name="Back Button" type="TextureButton" parent="."]
+offset_left = 6.0
+offset_right = 95.0
+offset_bottom = 90.0
 texture_normal = ExtResource("3_7nds3")
 texture_hover = ExtResource("4_75kre")
 ignore_texture_size = true
 stretch_mode = 3
 flip_v = true
 
-[node name="Random button" type="TextureButton" parent="Sprite2D"]
-offset_left = -338.455
-offset_top = -192.853
-offset_right = -36.4551
-offset_bottom = 121.147
-texture_normal = ExtResource("5_5ul67")
-texture_hover = ExtResource("6_7ihdr")
+[node name="Easy Button" type="TextureButton" parent="."]
+offset_left = 88.0
+offset_top = 220.0
+offset_right = 196.0
+offset_bottom = 331.0
+texture_normal = ExtResource("5_tm75f")
+texture_hover = ExtResource("6_8qaww")
 ignore_texture_size = true
 stretch_mode = 3
 
-[node name="TextureButton" type="TextureButton" parent="."]
-offset_left = 306.0
-offset_top = 180.0
-offset_right = 500.0
-offset_bottom = 373.0
-texture_normal = ExtResource("7_ly7nc")
-texture_hover = ExtResource("8_u775e")
+[node name="Normal button" type="TextureButton" parent="."]
+offset_left = 243.0
+offset_top = 222.0
+offset_right = 357.0
+offset_bottom = 319.0
+texture_normal = ExtResource("7_yuyrt")
+texture_hover = ExtResource("8_jlw8r")
 ignore_texture_size = true
 stretch_mode = 3
 
-[connection signal="pressed" from="Sprite2D/Back Button" to="." method="_on_back_button_pressed"]
-[connection signal="pressed" from="Sprite2D/Random button" to="." method="_on_random_button_pressed"]
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[node name="Hard button" type="TextureButton" parent="."]
+offset_left = 413.0
+offset_top = 221.0
+offset_right = 525.0
+offset_bottom = 334.0
+texture_normal = ExtResource("9_ph3n8")
+texture_hover = ExtResource("10_y1a5x")
+ignore_texture_size = true
+stretch_mode = 3
+
+[connection signal="pressed" from="Back Button" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Easy Button" to="." method="_on_easy_button_pressed"]
+[connection signal="pressed" from="Normal button" to="." method="_on_normal_button_pressed"]
+[connection signal="pressed" from="Hard button" to="." method="_on_hard_button_pressed"]
